@@ -1,51 +1,30 @@
-# React + TypeScript + Vite
+# To-Do List em React
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Este é um simples projeto de To-Do List construído com React, que permite aos usuários criar, concluir e excluir tarefas.
 
-Currently, two official plugins are available:
+## Funcionalidades
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **Adicionar Tarefa:** Permite que os usuários adicionem novas tarefas à lista.
+- **Concluir Tarefa:** Os usuários podem marcar tarefas como concluídas, o que altera o status visual da tarefa na lista.
+- **Excluir Tarefa:** Permite que os usuários removam tarefas da lista.
 
-## Expanding the ESLint configuration
+## Tecnologias Utilizadas
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+- **React:** Biblioteca JavaScript para construção de interfaces de usuário.
+- **Vite:** Ferramenta de build usada para desenvolvimento rápido e eficiente.
+- **CSS:** Para estilização da interface.
 
-- Configure the top-level `parserOptions` property like this:
+## Como Executar o Projeto
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+### Pré-requisitos
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+- Node.js instalado
+- npm ou yarn instalado
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
+### Passos para rodar o projeto localmente
 
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
-# to-do-list
+1. Clone o repositório:
+
+   ```bash
+   git clone https://github.com/seu-usuario/nome-do-repositorio.git
+   ```
