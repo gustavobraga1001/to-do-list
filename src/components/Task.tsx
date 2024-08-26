@@ -21,16 +21,20 @@ export function TaskComponent({
     onDeleteTask(task.id);
   }
   return (
-    <div className={styles.task}>
+    <div className={`${styles.task} ${task.isFinished ? styles.finish : ""}`}>
       <div className={styles.checkBox} onClick={handleToogleStatus}>
         {task.isFinished ? (
-          <CheckCircle size={24} color="#4EA8DE" weight="fill" />
+          <CheckCircle size={24} color="#5E60CE" weight="fill" />
         ) : (
-          <Circle size={24} color="#4EA8DE" />
+          <Circle size={24} color="#4EA8DE" weight="bold"/>
         )}
       </div>
 
-      {task.isFinished ? <p className={styles.finished}>{task.content}</p> : <p>{task.content}</p>}
+      {task.isFinished ? (
+        <p className={styles.finished}>{task.content}</p>
+      ) : (
+        <p className={styles.progress}>{task.content}</p>
+      )}
 
       <Trash className={styles.trash} size={24} onClick={handleDeleteTask} />
     </div>
