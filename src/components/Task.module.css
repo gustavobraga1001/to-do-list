@@ -1,0 +1,40 @@
+.task {
+  background-color: var(--gray-400);
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  border-radius: 8px;
+  padding: 16px 20px;
+
+  margin-top: 12px;
+}
+
+.task p {
+  margin: 0 10px; /* Espaçamento horizontal entre o texto e os ícones */
+  flex-grow: 1; /* Permite que o texto ocupe o espaço restante */
+}
+
+.task > *:not(:last-child) {
+  margin-right: 8px; /* Espaçamento entre os elementos, exceto o último */
+}
+
+.checkBox {
+  cursor: pointer;
+}
+
+.trash {
+  cursor: pointer;
+
+  transition: color 0.2s;
+}
+
+.trash:hover {
+  color: var(--danger);
+}
+
+.finished {
+  text-decoration: line-through;
+  color: var(--gray-300);
+}

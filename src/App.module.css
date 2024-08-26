@@ -1,0 +1,55 @@
+.box {
+  max-width: 53rem;
+  padding: 0 1rem;
+  margin: auto;
+}
+
+.boxTasks {
+  display: flex;
+  flex-direction: column;
+  margin: 4rem 0;
+}
+
+.infos {
+  display: flex;
+  justify-content: space-between;
+}
+
+.infos strong {
+  color: var(--blue);
+
+  font-weight: bold;
+}
+
+.infos span {
+  background-color: var(--gray-400);
+  color: var(--gray-200);
+  font-weight: bold;
+
+
+  border-radius: 32px;
+  padding: 2px 8px;
+}
+
+.description {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.tasks {
+  margin-top: 34px;
+  border-top: 1px solid var(--gray-400);
+}
+
+.notTasks {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 3rem 0;
+}
+
+.notTasks > img {
+  margin-bottom: 1rem;
+}
